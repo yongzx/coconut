@@ -7,7 +7,7 @@ The code base is the official implementation of [Training Large Language Models 
 ## Getting Started
 Clone repo:
 ```
-git clone git@github.com:facebookresearch/Coconut.git
+git clone git@github.com:facebookresearch/coconut.git
 cd Coconut
 ```
 

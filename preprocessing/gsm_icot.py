@@ -21,7 +21,7 @@ def main(split):
         }
         for d in data
     ]
-    json.dump(data, open(f"data/icot_{split}.json", "w"))
+    json.dump(data, open(f"data/gsm_{split}.json", "w"))
 
 
 if __name__ == "__main__":

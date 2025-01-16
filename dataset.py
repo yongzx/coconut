@@ -315,10 +315,11 @@ def get_cot_latent_dataset(
         dataset = processed_dataset[0]
 
     else:
-        if shuffle:
-            processed_dataset = processed_dataset.shuffle()
-        dataset = base_dataset.map(
+        processed_dataset = base_dataset.map(
             process_dataset, remove_columns=list(base_dataset.features), num_proc=32
         )
+        if shuffle:
+            processed_dataset = processed_dataset.shuffle()
+        dataset = processed_dataset
 
     return dataset
